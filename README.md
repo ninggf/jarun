@@ -34,13 +34,13 @@ mode = nohup        ; 运行方式 nohup or docker， 默认为 nohup
 [sample-jar]
 name = sample-jar    ; service name
 port = 8081          ; Server port
-jar = sample         ; 将在应用目录中搜索 sample-.*jar , launcher 启用时无效
+jar = sample         ; 将在应用目录中搜索 sample-.*jar , launcher等于true时无效
 profiles = dev       ; Spring boot active profile
 #path = sample-jar   ; 应用目录，默认与name一样
 #hosts = localhost   ; 运行在哪些主机上，默认localhost
 #args = '-dsprin=aa' ; 应用参数
-#launcher = true     ; jarlauncher模式
-#libs_dir = libs     ; jarlauncher模式时要指定的loader.path目录
+#launcher = true     ; jar launcher模式
+#libs_dir = libs     ; jar launcher模式时要指定的loader.path目录
 #log_dir = ./logs/   ; 目录目录，默认与全局日志目录一样
 ```
 
